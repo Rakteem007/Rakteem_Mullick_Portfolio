@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* styles.css or a similar global CSS file */
+.shadow-cyan-glow {
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.8), 0 0 16px rgba(0, 255, 255, 0.6);
+}
+
+@keyframes glowing {
+  0% {
+    border-color: cyan;
+    box-shadow: 0 0 5px cyan;
+  }
+  50% {
+    border-color: blue;
+    box-shadow: 0 0 20px blue;
+  }
+  100% {
+    border-color: cyan;
+    box-shadow: 0 0 5px cyan;
+  }
+}
+
+.glowing-border {
+  animation: glowing 2s infinite;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
